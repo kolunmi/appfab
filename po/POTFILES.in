@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/io.github.kolunmi.AppFab.desktop.in
+data/io.github.kolunmi.AppFab.metainfo.xml.in
+data/io.github.kolunmi.AppFab.gschema.xml
+src/main.c
+src/appfab-window.c
+src/appfab-window.ui
