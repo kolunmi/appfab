@@ -40,7 +40,7 @@ af_application_new (const char       *application_id,
   return g_object_new (AF_TYPE_APPLICATION,
                        "application-id", application_id,
                        "flags", flags,
-                       "resource-base-path", "/io/github/kolunmi/Af",
+                       "resource-base-path", "/io/github/kolunmi/AppFab",
                        NULL);
 }
 
