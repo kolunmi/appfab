@@ -8,6 +8,9 @@ appfab_deps = [
   dependency('gtk4'),
   dependency('libadwaita-1', version: '>= 1.8'),
   dependency('libdex-1', version: '>= 1.0'),
+  dependency('libfoundry-1', version: '>= 1.0'),
+  dependency('libfoundry-gtk-1', version: '>= 1.0'),
+  dependency('libfoundry-adw-1', version: '>= 1.0'),
 ]
 
 blueprints = custom_target('blueprints',

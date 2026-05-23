@@ -20,6 +20,9 @@
 
 #include "config.h"
 
+#include <foundry-adw.h>
+#include <foundry-gtk.h>
+#include <foundry.h>
 #include <glib/gi18n.h>
 #include <libdex.h>
 
@@ -37,6 +40,9 @@ main (int   argc,
   textdomain (GETTEXT_PACKAGE);
 
   dex_init ();
+  dex_future_disown (foundry_init ());
+  foundry_gtk_init ();
+  foundry_adw_init ();
 
   app = af_application_new ("io.github.kolunmi.AppFab", G_APPLICATION_DEFAULT_FLAGS);
   ret = g_application_run (G_APPLICATION (app), argc, argv);
